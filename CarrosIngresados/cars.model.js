@@ -12,7 +12,8 @@ const carsSchema = new Schema({
     {
       precioServicio: { type: Number, required: true },
       nombreServicio: { type: String, required: true },
-      cantidad: { type: Number, required: true },
+      precioRepuestos: { type: Number, required: true },
+      nombreRepuestos: { type: String, required: true },
     },
   ],
 });

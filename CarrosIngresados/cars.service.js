@@ -47,7 +47,7 @@ async function byPlaca(req, res) {
       );
     }
     carsDB.servicios.map((ser) => {
-      total += ser.precioServicio;
+      total = ser.precioServicio + ser.precioRepuestos + total;
     });
     res.status(200).send({ carsDB, total });
   } catch (error) {
